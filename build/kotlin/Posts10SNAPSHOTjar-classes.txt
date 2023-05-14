@@ -1,0 +1,1 @@
+C:\Kotlin\Posts\build\classes\kotlin\main\Likes.class;C:\Kotlin\Posts\build\classes\kotlin\main\MainKt.class;C:\Kotlin\Posts\build\classes\kotlin\main\Post.class;C:\Kotlin\Posts\build\classes\kotlin\main\PostKt.class;C:\Kotlin\Posts\build\classes\kotlin\main\WallService.class
