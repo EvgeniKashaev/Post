@@ -1,0 +1,19 @@
+<changelist name="Uncommitted_changes_before_Update_at_18_05_2023_0_30_[Changes]" date="1684359019983" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_05_2023_0_30_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 18.05.2023 0:30 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value=".gradle/file-system.probe" />
+    <option name="AFTER_PATH" value=".gradle/file-system.probe" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_05_2023_0_30_[Changes]/file-system.probe" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/libs/Posts-1.0-SNAPSHOT.jar" />
+    <option name="AFTER_PATH" value="build/libs/Posts-1.0-SNAPSHOT.jar" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_05_2023_0_30_[Changes]/Posts-1.0-SNAPSHOT.jar" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="build/jacoco/test.exec" />
+    <option name="AFTER_PATH" value="build/jacoco/test.exec" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_05_2023_0_30_[Changes]/test.exec" />
+  </binary>
+</changelist>
