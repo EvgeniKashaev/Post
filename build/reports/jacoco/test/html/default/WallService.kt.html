@@ -5,32 +5,29 @@
 <span class="fc" id="L5">    private var idNew = 1</span>
 
 
-    fun likeNull(likes: Likes): Int {
-<span class="fc bfc" id="L9" title="All 2 branches covered.">        if (0 &lt;= likes.count) {</span>
-<span class="fc" id="L10">            return likes.count</span>
-        }
-<span class="fc" id="L12">        likes.count = 0</span>
-<span class="fc" id="L13">        return likes.count</span>
-    }
-
     fun add(post: Post): Post {
-<span class="fc" id="L17">        val postNew = post.copy(id = idNew++)</span>
-<span class="fc" id="L18">        posts += postNew</span>
-<span class="fc" id="L19">        likeNull(post.like)</span>
-<span class="fc" id="L20">        return posts.last()</span>
+<span class="fc" id="L9">        val postNew = post.copy(id = idNew++)</span>
+<span class="fc" id="L10">        posts += postNew</span>
+<span class="fc" id="L11">        return posts.last()</span>
     }
 
     fun update(post: Post): Boolean {
-<span class="fc bfc" id="L24" title="All 2 branches covered.">        for ((index, postFromArray) in posts.withIndex()) {</span>
-<span class="fc bfc" id="L25" title="All 2 branches covered.">            if (post.id == index) {</span>
-<span class="fc" id="L26">                posts[index] = postFromArray.copy(</span>
-<span class="fc" id="L27">                    text = post.text,</span>
-<span class="fc" id="L28">                    like = post.like,</span>
+<span class="fc bfc" id="L15" title="All 2 branches covered.">        for ((index, postFromArray) in posts.withIndex()) {</span>
+<span class="fc bfc" id="L16" title="All 2 branches covered.">            if (post.id == index) {</span>
+<span class="fc" id="L17">                posts[index] = postFromArray.copy(</span>
+<span class="fc" id="L18">                    text = post.text,</span>
+<span class="fc" id="L19">                    like = post.like,</span>
                 )
-<span class="fc" id="L30">                return true</span>
+<span class="fc" id="L21">                return true</span>
             }
         }
-<span class="fc" id="L33">        return false</span>
+<span class="fc" id="L24">        return false</span>
     }
+    fun clear() {
+<span class="fc" id="L27">        posts = emptyArray()</span>
+<span class="fc" id="L28">        idNew = 0</span>
+        // С‚Р°РєР¶Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ СЃР±СЂРѕСЃРёС‚СЊ СЃС‡РµС‚С‡РёРє РґР»СЏ id РїРѕСЃС‚РѕРІ, РµСЃР»Рё РѕРЅ Сѓ РІР°СЃ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ
+<span class="fc" id="L30">    }</span>
+
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>

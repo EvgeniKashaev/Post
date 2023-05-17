@@ -1,3 +1,5 @@
+import junit.framework.TestCase.assertFalse
+import junit.framework.TestCase.assertTrue
 import org.junit.Before
 import org.junit.Test
 
@@ -7,29 +9,48 @@ class PostTest {
     fun clearBeforeTest() {
         WallService.clear()
     }
+
     @Test
-    fun addTest(){
+    fun addTest() {
         val post = Post(id = 12, like = Likes(12), text = "Kotlin")
         WallService.add(post)
         assert(true)
     }
 
     @Test
-    fun updatePostTrue() {
-        val result = WallService.add(Post(id = 12))
-        val post = Post(id = 1, like = Likes(-123), text = "Love")
-        WallService.add(post)
-        val post1 = Post(id = 1, like = Likes(0), text = "Hello")
-        val test = WallService.update(post1)
-        assert(test)
-    }
+    fun updateExistingTrue() {
+        // создаём целевой сервис
+        val service = WallService
+        // заполняем несколькими постами
+        service.add(Post(id = 1))
+        service.add(Post(id = 2))
+        service.add(Post(id = 3))
+        // создаём информацию об обновлении
+        val update = Post(id = 1)
 
+        // выполняем целевое действие
+        val result = service.update(update)
+
+        // проверяем результат (используйте assertTrue или assertFalse)
+        assertTrue(result)
+    }
 
     @Test
-    fun updateExisting1() {
-        val post2 = Post(id = 132)
-        val test = WallService.update(post2)
+    fun updateExistingFalse() {
+        // создаём целевой сервис
+        val service = WallService
+        // заполняем несколькими постами
+        service.add(Post(id = 1))
+        service.add(Post(id = 2))
+        service.add(Post(id = 3))
+        // создаём информацию об обновлении
+        val update = Post(id = 4)
 
-        assert(!test)
+        // выполняем целевое действие
+        val result = service.update(update)
+
+        // проверяем результат (используйте assertTrue или assertFalse)
+        assertFalse(result)
     }
+
 }
