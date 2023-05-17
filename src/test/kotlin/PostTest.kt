@@ -12,7 +12,7 @@ class PostTest {
 
     @Test
     fun addTest() {
-        val post = Post(id = 12, like = Likes(12), text = "Kotlin")
+        val post = Post(id = 11, like = Likes(12), text = "Kotlin")
         WallService.add(post)
         assert(true)
     }
