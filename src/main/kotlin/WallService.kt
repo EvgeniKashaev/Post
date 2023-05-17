@@ -5,18 +5,9 @@ object WallService {
     private var idNew = 1
 
 
-    fun likeNull(likes: Likes): Int {
-        if (0 <= likes.count) {
-            return likes.count
-        }
-        likes.count = 0
-        return likes.count
-    }
-
     fun add(post: Post): Post {
         val postNew = post.copy(id = idNew++)
         posts += postNew
-        likeNull(post.like)
         return posts.last()
     }
 
@@ -32,4 +23,10 @@ object WallService {
         }
         return false
     }
+    fun clear() {
+        posts = emptyArray()
+        idNew = 0
+        // также здесь нужно сбросить счетчик для id постов, если он у вас используется
+    }
+
 }

@@ -1,6 +1,19 @@
+import org.junit.Before
 import org.junit.Test
 
 class PostTest {
+
+    @Before
+    fun clearBeforeTest() {
+        WallService.clear()
+    }
+    @Test
+    fun addTest(){
+        val post = Post(id = 12, like = Likes(12), text = "Kotlin")
+        WallService.add(post)
+        assert(true)
+    }
+
     @Test
     fun updatePostTrue() {
         val result = WallService.add(Post(id = 12))
@@ -11,8 +24,9 @@ class PostTest {
         assert(test)
     }
 
+
     @Test
-    fun updatePostTrue1() {
+    fun updateExisting1() {
         val post2 = Post(id = 132)
         val test = WallService.update(post2)
 

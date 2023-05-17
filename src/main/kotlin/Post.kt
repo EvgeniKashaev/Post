@@ -9,4 +9,9 @@ data class Post(
     var id: Int,
     var text: String = "Hello",
     var date: String = deteNew,
+    var copyright: String = "Google",
+    var createdBy: Int = 1,
+    var isPinned: Int = 1,
+    var isFavorite: Boolean = true,
+    var markedAsAds: Int = 0,
 )
