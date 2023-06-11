@@ -14,4 +14,6 @@ data class Post(
     var isPinned: Int = 1,
     var isFavorite: Boolean = true,
     var markedAsAds: Int = 0,
+
+    val original: Post? = null
 )
