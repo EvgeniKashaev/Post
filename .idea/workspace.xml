@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5cbca40f-a01d-49bb-84a8-14ff253d29f7" name="Changes" comment="coomit5" />
+    <list default="true" id="5cbca40f-a01d-49bb-84a8-14ff253d29f7" name="Changes" comment="coomit2.2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,11 +35,11 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -73,7 +73,7 @@
       <command value="gradle test jacocoTestReport" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.Posts [test jacocoTestReport]">
+  <component name="RunManager" selected="Gradle.PostTest.updateExistingFalse">
     <configuration name="PostTest.updateExisting" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -175,9 +175,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.PostTest.updateExistingFalse" />
+        <item itemvalue="Gradle.Posts [test jacocoTestReport]" />
         <item itemvalue="Gradle.PostTest.updateExistingTrue" />
         <item itemvalue="Gradle.PostTest.updateExisting" />
-        <item itemvalue="Gradle.Posts [test jacocoTestReport]" />
         <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
@@ -240,7 +240,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684360595714</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="coomit2.1">
+      <created>1686475332529</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686475332529</updated>
+    </task>
+    <task id="LOCAL-00009" summary="coomit2.2">
+      <created>1686475742592</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686475742592</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -260,6 +274,8 @@
     <MESSAGE value="coomit3" />
     <MESSAGE value="coomit4" />
     <MESSAGE value="coomit5" />
-    <option name="LAST_COMMIT_MESSAGE" value="coomit5" />
+    <MESSAGE value="coomit2.1" />
+    <MESSAGE value="coomit2.2" />
+    <option name="LAST_COMMIT_MESSAGE" value="coomit2.2" />
   </component>
 </project>
