@@ -11,9 +11,8 @@ data class Post(
     var date: String = deteNew,
     var copyright: String = "Google",
     var createdBy: Int = 1,
-    var isPinned: Int = 1,
+    var isPinned: Int? = 1,
     var isFavorite: Boolean = true,
     var markedAsAds: Int = 0,
-
-    val original: Post? = null
+    val attachments: Array<Attachments> = arrayOf()
 )

@@ -1,9 +1,7 @@
 object WallService {
 
-
     private var posts = emptyArray<Post>()
     private var idNew = 1
-
 
     fun add(post: Post): Post {
         val postNew = post.copy(id = idNew++)
@@ -26,6 +24,5 @@ object WallService {
     fun clear() {
         posts = emptyArray()
         idNew = 0
-        // также здесь нужно сбросить счетчик для id постов, если он у вас используется
     }
 }

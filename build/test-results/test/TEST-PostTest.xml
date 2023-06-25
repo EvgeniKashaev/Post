@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PostTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-11T09:26:28" hostname="USER" time="0.572">
+<testsuite name="PostTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-06-25T15:00:27" hostname="USER" time="0.539">
   <properties/>
-  <testcase name="updateExistingFalse" classname="PostTest" time="0.572"/>
+  <testcase name="updateExistingFalse" classname="PostTest" time="0.538"/>
+  <testcase name="addTest" classname="PostTest" time="0.001"/>
+  <testcase name="updateExistingTrue" classname="PostTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
