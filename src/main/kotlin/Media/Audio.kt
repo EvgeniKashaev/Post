@@ -1,5 +1,6 @@
+package Media
+
 data class Audio(
-    override val type: String = "AudioAttachments",
     val id: Int,           //Идентификатор аудиозаписи.
     val ownerId: Int,      //Идентификатор владельца аудиозаписи.
     val artist: String,    //Исполнитель.
@@ -12,4 +13,4 @@ data class Audio(
     val date: Int,         //Дата добавления.
     val noSearch: Int,     //[1]    1, если включена опция «Не выводить при поиске». Если опция отключена, поле не возвращается.
     val isHq: Int,         //[1]1, если аудио в высоком качестве.
-): Attachments
+)

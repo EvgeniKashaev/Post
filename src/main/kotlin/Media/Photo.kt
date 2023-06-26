@@ -1,5 +1,6 @@
+package Media
+
 data class Photo(
-    override val type: String = "PhotoAttachments",
     val id: Int,                     //Идентификатор фотографии.
     val albumId: Int,                //Идентификатор альбома, в котором находится фотография.
     val ownerId: Int,                //Идентификатор владельца фотографии.
@@ -8,5 +9,4 @@ data class Photo(
     val date: Int,                   //Дата добавления в формате Unixtime.
     val width: Int,                  //Ширина оригинала фотографии в пикселах.
     val height: Int,                 //Высота оригинала фотографии в пикселах.
-
-): Attachments
+)
