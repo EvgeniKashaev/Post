@@ -1,14 +1,11 @@
-import java.text.SimpleDateFormat
-import java.util.Date
-
-val dateFormat = SimpleDateFormat("EEE, d MMM yyyy,  HH:mm:ss z")
-var deteNew = dateFormat.format(Date())
+import Navigation.Date
+import Reactions.Likes
 
 data class Post(
     var like: Likes = Likes(1),
     var id: Int,
     var text: String = "Hello",
-    var date: String = deteNew,
+    val date: String? = Date.date(),
     var copyright: String = "Google",
     var createdBy: Int = 1,
     var isPinned: Int? = 1,
@@ -18,7 +15,6 @@ data class Post(
     val fromId: Int = 0,
     val replyOwnerId: Int = 0,
     val replyPostId: Int = 0,
-    val comment: String = "Очень сложно было",
     val viewsCount: Int = 0,
     val postType: String = "Post",
     val signerId: Int = 0,
@@ -28,5 +24,4 @@ data class Post(
     val postponedId: Boolean = false,
 
     val attachments: Array<Attachments> = arrayOf()
-
 )

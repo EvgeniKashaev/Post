@@ -1,7 +1,20 @@
+import Reactions.Comment
+
 object WallService {
 
     private var posts = emptyArray<Post>()
+    private var comments = emptyArray<Comment>()
     private var idNew = 1
+
+
+    fun createComment(postId: Int, comment: Comment): Comment {
+        for (post in posts) if (post.id == postId) {
+            comments += comment
+        } else {
+            throw PostNotFoundException("No post $postId")
+        }
+        return comments.last()
+    }
 
     fun add(post: Post): Post {
         val postNew = post.copy(id = idNew++)
@@ -21,8 +34,10 @@ object WallService {
         }
         return false
     }
+
     fun clear() {
         posts = emptyArray()
         idNew = 0
     }
+
 }

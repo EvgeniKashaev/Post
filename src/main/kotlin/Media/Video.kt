@@ -1,12 +1,15 @@
 package Media
 
+import Navigation.Date
+
 data class Video(
     val title: String,        //Название видеозаписи
     val id: Int,              //Идентификатор видеозаписи
     val ownerId: Int,         //Идентификатор владельца видеозаписи
     val description: String,  //Текст описания видеозаписи
     val duration: Int,        //Длительность ролика в секундах
-    val date: Int,            //Дата создания видеозаписи в формате Unixtime.
+    val date: String? =
+        Date.date(),          //Дата создания видеозаписи в формате Unixtime.
     val addingDate: Int,      //Дата добавления видеозаписи пользователем или группой в формате Unixtime.
     val views: Int,           //Количество просмотров видеозаписи.
     val localViews: Int,      //Если видео внешнее, количество просмотров в ВК.
