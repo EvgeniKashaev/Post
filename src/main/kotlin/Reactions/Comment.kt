@@ -13,7 +13,7 @@ data class Comment(
     val text: String = "",                                    //Текст комментария.
     val placeholder: String = "",                             //заглушка для пользователей, которые не оформили подписку VK Donut.
 
-    val isDon: Boolean = true,                                  //является ли комментатор подписчиком VK Donut.
-    val canPost: Boolean = true,                                //может ли текущий пользователь оставлять комментарии в этой ветке.
-    val groupsCanPost: Boolean = true,                          // могут ли сообщества оставлять комментарии в ветке.
+    val isDon: Boolean = true,                                //является ли комментатор подписчиком VK Donut.
+    val canPost: Boolean = true,                              //может ли текущий пользователь оставлять комментарии в этой ветке.
+    val groupsCanPost: Boolean = true,                        // могут ли сообщества оставлять комментарии в ветке.
 )

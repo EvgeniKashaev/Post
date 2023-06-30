@@ -10,4 +10,4 @@ data class Date(val date: Date) {
             return dateFormat.format(Date())
         }
     }
-}
+} // очень хотелось автоматизировать этот пункт.

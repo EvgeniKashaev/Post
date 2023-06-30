@@ -3,7 +3,7 @@ import Reactions.Likes
 
 data class Post(
     var like: Likes = Likes(1),
-    var id: Int,
+    var id: Int = 0,
     var text: String = "Hello",
     val date: String? = Date.date(),
     var copyright: String = "Google",

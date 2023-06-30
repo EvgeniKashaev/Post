@@ -1,7 +1,7 @@
 import Reactions.Comment
 import Reactions.Likes
-import junit.framework.TestCase.assertFalse
-import junit.framework.TestCase.assertTrue
+import org.junit.Assert.*
+
 import org.junit.Before
 import org.junit.Test
 
@@ -15,25 +15,28 @@ class PostTest {
     @Test(expected = PostNotFoundException::class)
     fun shouldThrow() {
         // здесь код с вызовом функции, которая должна выкинуть PostNotFoundException
-        val post = Post(id = 0, text = "Help")
-        WallService.add(post)
-        WallService.createComment(2, comment = Comment(id = 12))
+        WallService.add(post = Post())
+        WallService.add(post = Post())
+        WallService.add(post = Post())
+        WallService.add(post = Post())
+
+        WallService.createComment(postId = 5, comment = Comment())
     }
 
     @Test(expected = PostNotFoundException::class)
-    fun shouldThrow1() {
+    fun commentAdded() {
+        val postId = 2
+        WallService.add(post = Post())
+        val result = WallService.createComment(postId = postId, comment = Comment(text = "Комментарий"))
 
-        WallService.add(Post(id = 1, text = "Help"))
-        WallService.createComment(postId = 1, comment = Comment(id = 12))
-
-        assert(value = true)
+        assertEquals(postId, result.id)
     }
 
     @Test
     fun addTest() {
-        val post = Post(id = 11, like = Likes(12), text = "Kotlin")
+        val post = Post(id = 1, like = Likes(12), text = "Kotlin")
         WallService.add(post)
-        assert(true)
+        assertEquals(1, post.id)
     }
 
     @Test
