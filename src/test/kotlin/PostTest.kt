@@ -27,7 +27,7 @@ class PostTest {
     fun commentAdded() {
         val postId = 2
         WallService.add(post = Post())
-        val result = WallService.createComment(postId = postId, comment = Comment(text = "Комментарий"))
+        val result = WallService.createComment(postId = postId, comment = Comment())
 
         assertEquals(postId, result.id)
     }
